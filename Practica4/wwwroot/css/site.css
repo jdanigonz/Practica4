@@ -35,3 +35,6 @@ a {
     font-size: 20px;
     color: white;
 }
+footer{
+    max-height:5rem;
+}
