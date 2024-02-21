@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Practica4.styles.css" asp-append-version="true" />
+
     <style>
-        body{
-            background: linear-gradient(skyblue, pink);
+        .container{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
         }
+        .Icon{
+            max-width:4rem;
+            box-shadow: 2px;
+        }
+
     </style>
 </head>
 <body>
+    
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <img class="Icon" src="./img/Modulos POINT_05.png" />
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Pagina Registros</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -37,6 +48,7 @@
         </nav>
     </header>
     <div class="container">
+
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

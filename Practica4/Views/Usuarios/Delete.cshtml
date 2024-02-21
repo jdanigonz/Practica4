@@ -3,7 +3,15 @@
 @{
     ViewData["Title"] = "Delete";
 }
-
+<style>
+    .row {
+        background-color: aliceblue;
+        margin: 1rem;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+</style>
 <h1>Borrar</h1>
 
 <h3>Seguro de borrar esto?</h3>
@@ -40,6 +48,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Borrar" class="btn btn-danger" /> |
-        <a asp-action="Index">Volver a la lista</a>
+        <a asp-action="Index" class="btn btn-primary">Volver a la lista</a>
     </form>
 </div>

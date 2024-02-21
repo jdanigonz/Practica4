@@ -3,11 +3,18 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    table{
+        background-color:aliceblue;
+        border-radius:10px;
+        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.3);
+    }
 
+</style>
 <h1>Usuarios</h1>
 
 <p>
-    <a asp-action="Create">Crear Nuevo</a>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
 </p>
 <table class="table">
     <thead>

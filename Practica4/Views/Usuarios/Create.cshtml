@@ -3,13 +3,26 @@
 @{
     ViewData["Title"] = "Create";
 }
+<style>
 
+    .row {
+        background-color: aliceblue;
+        margin: 1rem;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .boton{
+        color:aliceblue;
+     
+    }
+</style>
 <h1>Crear</h1>
 
 <h4>Usuario</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -33,14 +46,14 @@
                 <span asp-validation-for="Direccion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Crear" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Volver a la lista</a>
+<div class="boton">
+    <a asp-action="Index" class="btn btn-primary">Volver a la lista</a>
 </div>
 
 @section Scripts {

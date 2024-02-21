@@ -18,5 +18,20 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    min-height: 100%;
+    font-family: verdana;
+    background-image: url('../img/mountain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+h1 {
+    font-family: Zombie;
+}
+a {
+    text-decoration: none;
+    font-family: 'Berlin Sans FB';
+    font-size: 20px;
+    color: white;
 }
